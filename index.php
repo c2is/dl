@@ -20,6 +20,7 @@ foreach ($mapping as $rule) {
 }
 
 function response($filename) {
+		chdir("files");
 		if (! file_exists($filename)) {
 			die("File ".$filename." doesn't exist");
 		} elseif (is_dir($filename)) {

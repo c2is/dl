@@ -3,3 +3,5 @@
 !mapping.txt
 !.gitignore
 !README.md
+!files/
+!files/*
