@@ -1,6 +1,6 @@
 # dl
 Make a file named mapping.txt base on that format:  
-4 alphanum chars space filename  
+<4 alphanum chars> <space> <filename>  
 Example:  
 ```txt
 abcd somefile.txt
