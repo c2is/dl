@@ -1,6 +1,9 @@
 # dl
-Make a file named mapping.txt base on that format:  
-[4 alphanum chars] [space] [filename]  
+Web application which permit to download files by shortened url.
+It automatically zip folders.
+
+The main feature come from the file named mapping.txt based on that format:  
+[4 letters] [space] [filename]  
 Example:  
 ```txt
 abcd somefile.txt
@@ -22,3 +25,9 @@ Require valid-user
 
 RewriteEngine On
 RewriteRule ^.*$ index.php [L]
+# SCRIPT CALLED BY INCRON
+
+# AUTOMATION
+The file download-area-listener.sh show you how to automate : 
+- mapping.txt file filling
+- email alert sending
