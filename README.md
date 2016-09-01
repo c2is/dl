@@ -1,5 +1,5 @@
 # dl
-Web application which permit to download files by shortened url.
+Web application which permits to download files by shortened url.
 It automatically zip folders.
 
 The main feature come from the file named mapping.txt based on that format:  
@@ -13,6 +13,7 @@ Call in your browser http://dl.mydomain/abcd
 And the file somefile.txt will be downloaded
 
 # VHOST
+```
 Options -Indexes FollowSymLinks MultiViews
 AllowOverride All
 Order allow,deny
@@ -25,7 +26,7 @@ Require valid-user
 
 RewriteEngine On
 RewriteRule ^.*$ index.php [L]
-# SCRIPT CALLED BY INCRON
+```
 
 # AUTOMATION
 The file download-area-listener.sh show you how to automate : 
